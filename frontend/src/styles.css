@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fef3c7;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input, textarea, select {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Common styles */
+.page {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #fef3c7;
+  border-bottom: 2px solid #92400e;
+  padding: 1rem 0;
+}
+
+.navbar_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #78350f;
+}
+
+.nav_items {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav_link {
+  color: #78350f;
+  font-weight: 500;
+}
+
+.nav_link:hover {
+  color: #92400e;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn_primary {
+  background-color: #78350f;
+  color: white;
+}
+
+.btn_primary:hover {
+  background-color: #92400e;
+}
+
+.btn_secondary {
+  background-color: white;
+  color: #78350f;
+  border: 1px solid #78350f;
+}
+
+.btn_secondary:hover {
+  background-color: #fef3c7;
+}
+
+.btn_danger {
+  background-color: #dc2626;
+  color: white;
+}
+
+.btn_danger:hover {
+  background-color: #b91c1c;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-weight: 500;
+  color: #57534e;
+}
+
+.input, .select, .textarea {
+  padding: 0.75rem;
+  border: 1px solid #d6d3d1;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  outline: none;
+  border-color: #78350f;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #57534e;
+}
+
+.grade_badge {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.grade_10 {
+  background-color: #bfdbfe;
+}
+
+.grade_11 {
+  background-color: #fef08a;
+}
+
+.grade_12 {
+  background-color: #fecaca;
+}
+
+.student_card {
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.student_card_header {
+  padding: 1rem;
+  border-bottom: 1px solid #e7e5e4;
+}
+
+.student_card_body {
+  padding: 1rem;
+}
+
+.student_card_actions {
+  padding: 1rem;
+  border-top: 1px solid #e7e5e4;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid_2 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid_3 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid_4 {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.section_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #78350f;
+  margin: 2rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #fef3c7;
+}
