@@ -1,0 +1,62 @@
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.label {
+  font-weight: 600;
+  color: #57534e;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.input,
+.select,
+.textarea {
+  padding: 0.875rem 1rem;
+  border: 2px solid #e7e5e4;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  background-color: #fafaf9;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #78350f;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(120, 53, 15, 0.1);
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.section_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #78350f;
+  margin: 2.5rem 0 1.5rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid #fef3c7;
+  letter-spacing: 0.5px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid_2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid_3 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
